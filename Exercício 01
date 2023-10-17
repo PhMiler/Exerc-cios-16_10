@@ -1,0 +1,20 @@
+class Carro:
+    def _init_(self, modelo, ano):
+        self._modelo = modelo
+        self._ano = ano
+
+    @property
+    def modelo(self):
+        return self._modelo
+
+    @modelo.setter
+    def modelo(self, modelo):
+        self._modelo = modelo
+
+    @property
+    def ano(self):
+        return self._ano
+
+    @ano.setter
+    def ano(self, ano):
+        self._ano = ano
