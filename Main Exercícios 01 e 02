@@ -1,0 +1,6 @@
+from Carro import Carro
+
+c1 = Carro('Corsa' , 2009)
+
+print(c1.modelo)
+print(c1.ano)
