@@ -1,0 +1,10 @@
+#Main
+
+from Carro import Carro
+from Moto import Moto
+
+c1 = Carro("Honda", 2015)
+m1 = Moto("Yamaha", 2023)
+
+c1.imprimir()
+m1.imprimir()
