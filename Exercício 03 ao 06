@@ -1,0 +1,41 @@
+#Classe Veiculo 
+
+class Veiculo:
+    def __init__(self, tipo, velocidade):
+        self._velocidade = velocidade
+        self._tipo = tipo
+
+    def descricao(self):
+        print(f'É um veiculo utilizado para percorrer longas distancias rapidamente')
+
+    def acelerarVeiculo(self):
+        print(f'O Veiculo está acelerando!') 
+
+
+#Class Moto
+from Veiculo import Veiculo
+
+class Moto(Veiculo):
+    def __init__(self, tipo, velocidade):
+        super().__init__(tipo, velocidade)  
+
+    def descricao(self):
+        print(f'{self._tipo} é um meio de transporte de velocidade máxima {self._velocidade}')
+    
+    def acelerarVeiculo(self, velocidade):
+        self._velocidade = velocidade
+        print(f'A {self._tipo} está acelerando!! Com uma velocidad de: {self._velocidade}')
+
+#Class Carro
+from Veiculo import Veiculo
+
+class Carro(Veiculo):
+    def __init__(self, tipo, velocidade):
+        super().__init__(tipo, velocidade) 
+
+    def descricao(self):
+        print(f'{self._tipo} é um meio de trasnporte que tem velocidade máxima de {self._velocidade}')
+
+    def acelerarVeiculo(self, velocidade):
+        self._velocidade = velocidade
+        print(f'O {self._tipo} está acelerando! Com uma velocidade de: {self._velocidade}')
