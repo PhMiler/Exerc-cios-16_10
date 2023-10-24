@@ -1,0 +1,36 @@
+#Classe Imprimivel
+
+from abc import ABC, abstractmethod
+
+class Imprimivel(ABC):
+    @abstractmethod
+    def imprimir(self):
+        pass
+
+#Class Moto
+
+from Imprimivel import Imprimivel
+
+class Moto(Imprimivel):
+    def __init__(self, marca, ano):
+        self._marca = marca
+        self._ano = ano
+
+
+    def imprimir(self):
+        print(f'A marca da moto é: {self._marca}')
+        print(f'O ano dessa moto é: {self._ano}')
+
+#Class Carro
+
+from Imprimivel import Imprimivel
+
+class Carro(Imprimivel):
+    def __init__(self, marca, ano):
+        self._marca = marca
+        self._ano = ano
+
+
+    def imprimir(self):
+        print(f'A marca do carro é: {self._marca}')
+        print(f'O ano desse carro é: {self._ano}') 
